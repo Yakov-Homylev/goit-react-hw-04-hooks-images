@@ -50,7 +50,6 @@ function App() {
         setLoadMoreButton(true);
       })
       .catch((error) => {
-        console.log(error);
         setStatus(Status.ERROR);
         setLoadMoreButton(false);
       });
