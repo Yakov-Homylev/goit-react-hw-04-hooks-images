@@ -76,6 +76,9 @@ function App() {
   };
 
   const toBigImage = (e) => {
+    if (e.target.nodeName !== "IMG") {
+      return;
+    }
     setBigImage(e.target.alt);
     setStatus(Status.MODAL);
   };
